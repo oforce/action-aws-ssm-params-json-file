@@ -5,8 +5,10 @@ const { getParameters } = require('./ssm');
 async function run() {
   const params = core.getInput('params', { required: true });
   const filename = core.getInput('filename', { required: true });
+
   const values = await getParameters(params);
   const settings = values.reduce(setVariable, {});
+
   fs.writeFileSync(filename, JSON.stringify(settings, null, 2));
 }
 
