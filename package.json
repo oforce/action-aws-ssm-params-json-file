@@ -1,6 +1,6 @@
 {
   "name": "action-aws-ssm-params-json-file",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
