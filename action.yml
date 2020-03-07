@@ -1,0 +1,20 @@
+name: AWS SSM Paramters to JSON file
+author: Chris Martin <chris.martin@oforce.com>
+description: AWS SSM Paramters to JSON file
+
+branding:
+  icon: cloud
+  color: orange
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+inputs:
+  params:
+    description: The parameter to read
+    required: true
+
+  filename:
+    description: The filename to write the settings to
+    required: true
